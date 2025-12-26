@@ -6,7 +6,7 @@ subscription-auto-update-enable: 1
 #profile-update-interval: 1
 #new-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happ.txt
 
-#providerid {ueURloZH}
+#providerid: {ueURloZH}
 #hide-settings: 1
 
 #announce: Обновить конфигурации - жми 🔄
