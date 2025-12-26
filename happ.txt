@@ -14,7 +14,7 @@ subscription-auto-update-enable: 1
 ##sub-expire-button-link: https:/t.me/lte_on_line
 ---------------------------------
 
-#announce: Обновить конфигурации - жми 🔄
+#announce:0KLQtdGB0YLQuNGA0YPQudGC0LUg0L3QvtCy0YvQtSDQvtCx0YXQvtC00Ysg0YHQviDQt9C90LDRh9C60L7QvCDwn5SUCtCd0L7QstGL0LUg0LTQvdC10LLQvdGL0LUgdnBuINGB0LXRgNCy0LXRgNCwINGB0L4g0LfQvdCw0YfQutC+0Lwg8J+fogoK0J7QsdC90L7QstC40YLRjCDQutC+0L3RhNC40LPRg9GA0LDRhtC40LggLSDQttC80Lgg8J+UhAo=
 
 #subscription-ping-onopen-enabled: 1
 
