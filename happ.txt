@@ -6,7 +6,7 @@ subscription-auto-update-enable: 1
 #profile-update-interval: 1
 #new-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happ.txt
 #hide-settings: 1
-#announce: Обновить конфигурации - жми 🔄
+#announce: Обновить конфигурации - жми 🔄 U+000A Возникли вопросы - нажми https://img.icons8.com/?size=100&id=k4jADXhS5U1t&format=png&color=000000
 
 ↓↓↓↓↓↓↓↓↓oversecure-mix↓↓↓↓↓↓↓↓↓
 
