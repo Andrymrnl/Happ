@@ -6,6 +6,8 @@ subscription-auto-update-enable: 1
 #profile-update-interval: 1
 #new-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happ.txt
 
+#hide-settings: 1
+
 ↓↓↓↓↓↓↓↓↓oversecure-mix↓↓↓↓↓↓↓↓↓
 
 vless://7dadaaa7-5365-4c45-98d1-e1ed4c478147@speed.overload.ovh:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=speed.overload.ovh&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#%F0%9F%94%A5%D0%90%D0%B2%D1%82%D0%BE%20%7C%20(20%20%D0%93%D0%B1%D0%B8%D1%82%2Fc%20BURST%F0%9F%8C%80)
