@@ -1,5 +1,5 @@
 #profile-title: Andry VPN
-#subscription-userinfo: upload=0; download=23211; total=123; expire=17909516;
+#subscription-userinfo: upload=0; download=23211; total=123; expire=179095161;
 #support-url: https://t.me/lte_on_line
 #profile-web-page-url: https://t.me/lte_on_line
 
