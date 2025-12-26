@@ -6,7 +6,7 @@ subscription-auto-update-enable: 1
 #profile-update-interval: 1
 #new-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happ.txt
 #hide-settings: 1
-#announce: Обновить конфигурации - жми 🔄 U+000A Возникли вопросы - нажми https://img.icons8.com/?size=100&id=k4jADXhS5U1t&format=png&color=000000
+#announce: Обновить конфигурации - жми 🔄
 
 ↓↓↓↓↓↓↓↓↓oversecure-mix↓↓↓↓↓↓↓↓↓
 
@@ -65,8 +65,7 @@ vless://7dadaaa7-5365-4c45-98d1-e1ed4c478147@84.201.138.55:8443?security=reality
 
 ↓↓↓бос впн обычный↓↓↓
 
-
-vless://7dadaaa7-5365-4c45-98d1-e1ed4c478147@151.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426↓↓Дневные сервера↓↓
+vless://7409bd8d-9af3-4c28-b5f8-2cfc2aa967fa@5111.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#↓↓ДНЕВНЫЕ↓↓
 
 vless://334d0de0-c3da-11f0-8032-c2a162e9=5b69@apkb.bosx.net:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api.s3.yandex.net&pbk=OBYpjL0c5gyrHRlMYcDviGSw7tqNTppvUNdmgfTIEgc&sid=abcdef0123456789#%F0%9F%87%AB%F0%9F%87%AE%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F%20%E2%9A%A1%EF%B8%8F
 
