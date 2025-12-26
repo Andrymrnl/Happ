@@ -9,6 +9,11 @@ subscription-auto-update-enable: 1
 #providerid: {ueURloZH}
 #hide-settings: 1
 
+---------------------------------
+#sub-expire: 1
+##sub-expire-button-link: https:/t.me/lte_on_line
+---------------------------------
+
 #announce: Обновить конфигурации - жми 🔄
 
 #subscription-ping-onopen-enabled: 1
