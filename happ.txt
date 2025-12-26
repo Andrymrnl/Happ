@@ -3,6 +3,7 @@
 #support-url: https://t.me/lte_on_line
 #profile-web-page-url: https://t.me/lte_on_line
 subscription-auto-update-enable: 1
+#new-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happ.txt
 
 
 vless://7409bd8d-9af3-4c28-b5f8-2cfc2aa967fa@51.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#Balance-1
