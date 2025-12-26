@@ -90,7 +90,7 @@
             "tag": "block"
         }
     ],
-    "remarks": "🕹️Авто | (20 Гбит/c GAMES-FIX⚡)",
+    "remarks": "🕹️Авто",
     "routing": {
         "domainMatcher": "hybrid",
         "domainStrategy": "IPIfNonMatch",
