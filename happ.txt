@@ -14,13 +14,13 @@ subscription-auto-update-enable: 1
 ##sub-expire-button-link: https:/t.me/lte_on_line
 ---------------------------------
 
-#announce: base64: 0JXRgdC70Lgg0LXRgdGC0Ywg0LLQvtC/0YDQvtGB0YssINC/0LjRiNC4INCyINGC0LXQu9C10LPRgywg0L3QsNC20LDQsiDRgtGD0LTQsCDihpfvuI8KCuKaoO+4j9Ci0LXRgdGC0LjRgNGD0LnRgtC1INC90L7QstGL0LUg0L7QsdGF0L7QtNGLINGB0L4g0LfQvdCw0YfQutC+0Lwg4p6UIPCflJQKCuKaoO+4j9Cd0L7QstGL0LUg0LTQvdC10LLQvdGL0LUgdnBuINGB0LXRgNCy0LXRgNCwINGB0L4g0LfQvdCw0YfQutC+0Lwg4p6UIPCfn6IKCtCe0LHQvdC+0LLQuNGC0Ywg0LrQvtC90YTQuNCz0YPRgNCw0YbQuNC4IC0g0LbQvNC4IPCflIQ=
+#announce: base64: 0JXRgdC70Lgg0LXRgdGC0Ywg0LLQvtC/0YDQvtGB0YssINC/0LjRiNC4INCyINGC0LXQu9C10LPRgyDQvdCw0LbQsNCyINGC0YPQtNCwIOKGl++4jwoK4pqg77iP0J3QvtCy0YvQtSBbTFRFLzRHXSDQvtCx0YXQvtC00Ysg0YHQviDQt9C90LDRh9C60L7QvCDinpQg8J+UlAoK4pqg77iP0J3QvtCy0YvQtSBbV0ktRkkgLSBMVEUvNEddINGB0LXRgNCy0LXRgNCwINGB0L4g0LfQvdCw0YfQutC+0Lwg4p6UIPCfn6IKCtCe0LHQvdC+0LLQuNGC0Ywg0LrQvtC90YTQuNCz0YPRgNCw0YbQuNC4IC0g0LbQvNC4IPCflIQ=
 
 #subscription-ping-onopen-enabled: 1
 
 ↓↓↓↓↓↓↓↓↓DZEN VPN TEST↓↓↓↓↓↓↓↓↓
 
-vless://7409bd8d-9af3-4c28-b5f8-2cfc2aa967fa@5111.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#  ↓ ↓ YOUTUBE, TG, INSTA ↓ ↓
+vless://7409bd8d-9af3-4c28-b5f8-2cfc2aa967fa@5111.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#  👇👇 WI-FI, LTE/4G сервера 👇👇
 
 vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@auto.srv.dznn.net:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=listwhite.cc&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%8C%8F%20%D0%90%D0%B2%D1%82%D0%BE%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%20%7C%20🟢
 
@@ -44,18 +44,18 @@ vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@107.161.168.109:443?flow=xtls-rprx-
 
 vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@kz.dznn.net:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=safari&sni=stats.vk-portal.net&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%87%B0%F0%9F%87%BFKazakhstan🟢
 
-vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@109.122.199.180:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=edge&sni=eh.vk.com&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%87%B7%F0%9F%87%BARussia🟢%20%231
+vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@109.122.199.180:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=edge&sni=eh.vk.com&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%87%B7%F0%9F%87%BARussia%20%231🟢
 
-vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@93.183.105.105:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=safari&sni=sun6-21.userapi.com&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=0a6ba2716a409da6#%F0%9F%87%B7%F0%9F%87%BARussia🟢%20%232%20%5B%D0%9A%D0%B8%D0%BD%D0%BE%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%5D
+vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@93.183.105.105:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=safari&sni=sun6-21.userapi.com&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=0a6ba2716a409da6#%F0%9F%87%B7%F0%9F%87%BARussia%20%232%20%5B%D0%9A%D0%B8%D0%BD%D0%BE%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%5D🟢
 
-vless://ae8ee10c-dbde-01f4-aa77-95f7c83dfa84@nl.dznn.net:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=edge&sni=sun6-21.userapi.com&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%87%B3%F0%9F%87%B1Netherlands🟢%20%5B%D0%A1%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BE%D0%B9%5D
+vless://ae8ee10c-dbde-01f4-aa77-95f7c83dfa84@nl.dznn.net:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=edge&sni=sun6-21.userapi.com&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%87%B3%F0%9F%87%B1Netherlands%20%5B%D0%A1%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BE%D0%B9%5D🟢
 
 vless://ae8ee10c-dbde-4d0a-aa77-95f7c83dfa84@92.112.48.117:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=random&sni=listwhite.cc&pbk=9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg&sid=19aa22f681923dc8#%F0%9F%87%A6%F0%9F%87%B9Austria🟢
 
 ----ОБХОДЫ----
 ↓↓↓↓↓↓Бос обходы↓↓↓↓↓↓
 
-vless://7409bd8d-9af3-4c28-b5f8-2cfc2aa967fa@5111.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#↓↓ ТОЛЬКО ОБХОД - LTE ↓↓
+vless://7409bd8d-9af3-4c28-b5f8-2cfc2aa967fa@5111.250.28.38:8443?security=reality&type=tcp&headerType=none&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=lCwVDvngXM3kLz86XpOJmZ46coOVaV7Kl7vB7cCPeQI&sid=a20d3ed244c76426#👇👇 ТОЛЬКО ОБХОД - LTE/4G 👇👇
 
 vless://ae8ee10c-dbde-2040-aa77-95f7c83dfa84@s1.ws.listwhite.cc:443?type=ws&host=s1.ws.listwhite.cc&path=/upload/session&security=tls&sni=s1.ws.listwhite.cc&fp=chrome&allowInsecure=0#%F0%9F%87%B5%F0%9F%87%B1%F0%9F%86%95%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA%20%231%20%F0%9F%94%94%20
 
