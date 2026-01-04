@@ -1,0 +1,19 @@
+#profile-title: Sova VPN
+#subscription-userinfo: upload=∞; download=∞; total=0; expire=2222222229;
+#support-url: https://t.me/lte_on_line
+///#profile-web-page-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happJS.txt
+subscription-auto-update-enable: 1
+#profile-update-interval: 1
+#new-url: https://raw.githubusercontent.com/Andrymrnl/Happ/refs/heads/main/happ.txt
+
+#providerid ueURloZH
+#hide-settings: 1
+
+---------------------------------
+#sub-expire: 1
+##sub-expire-button-link: https:/t.me/lte_on_line
+---------------------------------
+
+#announce: base64: 0JXRgdC70Lgg0LXRgdGC0Ywg0LLQvtC/0YDQvtGB0YssINC/0LjRiNC4INCyINGC0LXQu9C10LPRgyDQvdCw0LbQsNCyINGC0YPQtNCwIOKGl++4jwoK4pqg77iP0J3QvtCy0YvQtSBbTFRFLzRHXSDQvtCx0YXQvtC00Ysg0YHQviDQt9C90LDRh9C60L7QvCDinpQg8J+UlAoK4pqg77iP0J3QvtCy0YvQtSBbV0ktRkkgLSBMVEUvNEddINGB0LXRgNCy0LXRgNCwINGB0L4g0LfQvdCw0YfQutC+0Lwg4p6UIPCfn6IKCtCe0LHQvdC+0LLQuNGC0Ywg0LrQvtC90YTQuNCz0YPRgNCw0YbQuNC4IC0g0LbQvNC4IPCflIQ=
+
+#subscription-ping-onopen-enabled: 1
