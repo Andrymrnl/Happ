@@ -7029,4 +7029,5492 @@
         ]
     }
 }
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "120",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "realitySettings": {
+                    "fingerprint": "chrome",
+                    "publicKey": "J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs",
+                    "serverName": "api-maps.yandex.ru",
+                    "shortId": "a20d3ed244c76426",
+                    "show": false
+                },
+                "security": "reality",
+                "tcpSettings": {
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🛡️🌐CDN Локации",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.72.103.3",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdn.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdn.speedload.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(Megafone)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdn.speedload.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdn.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdn.speedload.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(Megafone-double)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdncloudtwo.serverstats.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdncloudtwo.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdncloudtwo.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇷France(Megafone)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.72.103.3",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdncloudtwo.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdncloudtwo.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇷France(Megafone-double)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.72.103.3",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdnfive.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdnfive.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(Megafone)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "38.244.205.145",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdntwo.speedstream.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdntwo.speedstream.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(Megafone-NEW)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdncloudone.serverstats.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdncloudone.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdncloudone.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇸🇪Sweden(Megafone)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.72.103.3",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdncloudone.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdncloudone.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇸🇪Sweden(Megafone-double)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdncloudthree.serverstats.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdncloudthree.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdncloudthree.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇩🇪Германия(Megafone)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.72.103.3",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdncloudthree.serverstats.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdncloudthree.serverstats.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇩🇪Германия(Megafone-double)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdntwo.dnsttlocate.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdntwo.dnsttlocate.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdntwo.dnsttlocate.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇳🇱Нидерланды(Megafone)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "188.72.103.3",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdntwo.dnsttlocate.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdntwo.dnsttlocate.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇳🇱Нидерланды(Megafone-double)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "s60126.cdn.ngenix.net",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "qq",
+                    "serverName": "s60126.cdn.ngenix.net",
+                    "show": false
+                },
+                "wsSettings": {
+                    "headers": {
+                        "Host": "s60126.cdn.ngenix.net"
+                    },
+                    "path": "/stream/live/wWgdfFe54vc"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇷🇺Санкт-Петербург(Обход-WS)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.155.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-3⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "194.67.192.10",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-4⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.253.21.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-5⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.154.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-6⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.209.70.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-7⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.209.69.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-8⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.155.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.fastload.site",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest-9⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "api.furypay.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-4⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.155.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-5⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "194.67.192.10",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-6⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.253.21.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-7⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.154.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-8⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.209.70.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-9⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.209.69.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-10⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.155.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.furypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.furypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇵🇱Польша(БилайнTest-11⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "api.speedload.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-5⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.155.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-6⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "194.67.192.10",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-7⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.253.21.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-8⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.154.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-9⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.209.70.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-10⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "85.209.69.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-11⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "185.40.155.13",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "api.speedload.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "extra": {
+                        "headers": {
+                            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                            "Accept-Encoding": "gzip, deflate, br",
+                            "Accept-Language": "ru-RU,ru;q=0.9",
+                            "Priority": "u=0, i",
+                            "Sec-Fetch-Dest": "document",
+                            "Sec-Fetch-Mode": "navigate",
+                            "Sec-Fetch-Site": "none",
+                            "Upgrade-Insecure-Requests": "1",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                        },
+                        "noGRPCHeader": true,
+                        "scMaxConcurrentPosts": 100,
+                        "scMaxEachPostBytes": 1000000,
+                        "scMinPostsIntervalMs": 30,
+                        "scStreamUpServerSecs": "20-80",
+                        "xPaddingBytes": "100-1000",
+                        "xmux": {
+                            "cMaxReuseTimes": 0,
+                            "hKeepAlivePeriod": 0,
+                            "hMaxRequestTimes": "600-900",
+                            "hMaxReusableSecs": "1800-3000",
+                            "maxConcurrency": "16-32",
+                            "maxConnections": 0
+                        }
+                    },
+                    "host": "api.speedload.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇱🇻Латвия(БилайнTest-12⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdn.glorypay.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdn.glorypay.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdn.glorypay.ru",
+                    "mode": "auto",
+                    "path": "/"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇫🇮Финляндия(БилайнTest №2 (1)⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "gretwo.dnsttlocate.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "gretwo.dnsttlocate.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "gretwo.dnsttlocate.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇸🇪Швеция(БилайнTest №3 (1)⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "greone.dnsttlocate.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "greone.dnsttlocate.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "greone.dnsttlocate.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇦🇹Вена(БилайнTest №3 (1)⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "cdn.fastload.site",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdn.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdn.fastload.site",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇳🇱Нидерланды(БилайнTest №3 (1)⚡)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "128.75.228.190",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "gretwo.dnsttlocate.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "gretwo.dnsttlocate.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇸🇪Швеция(Билайн/Мегафон)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "128.75.228.190",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "cdn.fastload.site",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "cdn.fastload.site",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇳🇱Нидерланды(Билайн/Мегафон)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+{
+    "dns": {
+        "queryStrategy": "UseIP",
+        "servers": [
+            "1.1.1.1",
+            "1.0.0.1"
+        ]
+    },
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "auth": "noauth",
+                "udp": true
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "socks"
+        },
+        {
+            "listen": "0.0.0.0",
+            "port": 10809,
+            "protocol": "http",
+            "settings": {
+                "allowTransparent": false
+            },
+            "sniffing": {
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "enabled": true,
+                "routeOnly": false
+            },
+            "tag": "http"
+        }
+    ],
+    "meta": null,
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "greone.dnsttlocate.ru",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "id": "7dadaaa7-5365-4c45-98d1-e1ed4c478147"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "xhttp",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "alpn": [
+                        "h2",
+                        "http/1.1"
+                    ],
+                    "fingerprint": "chrome",
+                    "serverName": "greone.dnsttlocate.ru",
+                    "show": false
+                },
+                "xhttpSettings": {
+                    "host": "greone.dnsttlocate.ru",
+                    "mode": "auto"
+                }
+            },
+            "tag": "proxy"
+        },
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
+        }
+    ],
+    "remarks": "🇦🇹Вена(Билайн/Мегафон)",
+    "routing": {
+        "domainMatcher": "hybrid",
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "outboundTag": "direct",
+                "protocol": [
+                    "bittorrent"
+                ],
+                "type": "field"
+            }
+        ]
+    }
+}
+,
+
+
+
+
 ]
